@@ -1,0 +1,15 @@
+{
+  "name": "plantillasnuevas",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "sass -w scss:css"
+  },
+  "keywords": [],
+  "author": "Manuel Arnaldo",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.56.1"
+  }
+}
