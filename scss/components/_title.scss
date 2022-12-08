@@ -12,4 +12,8 @@
 
     letter-spacing: 0.3rem;
   }
+
+  &--felicidades {
+    width: clamp(40%, 35rem, 90%);
+  }
 }

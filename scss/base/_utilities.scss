@@ -36,6 +36,18 @@
   }
 }
 
+.row-reverse-medium {
+  @include for-size('tablet-medium-up') {
+    flex-direction: row-reverse !important;
+  }
+}
+
+.row-reverse-landscape {
+  @include for-size('tablet-landscape-up') {
+    flex-direction: row-reverse !important;
+  }
+}
+
 //! Paddings
 
 .pT-2 {
