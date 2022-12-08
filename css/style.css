@@ -7,8 +7,13 @@
 }
 
 html {
-  font-size: 62.5%;
+  font-size: 50%;
   overflow-x: hidden;
+}
+@media (min-width: 600px) {
+  html {
+    font-size: 62.5%;
+  }
 }
 
 body {
@@ -17,10 +22,16 @@ body {
 }
 
 .container {
-  padding-right: 2rem;
-  padding-left: 2rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
   max-width: 1200px;
   margin: 0 auto;
+}
+@media (min-width: 700px) {
+  .container {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
 }
 
 @media (min-width: 400px) {
@@ -32,14 +43,12 @@ body {
 @media (min-width: 700px) {
   .row-medium {
     flex-direction: row !important;
-    justify-content: space-around;
   }
 }
 
 @media (min-width: 900px) {
   .row-landscape {
     flex-direction: row !important;
-    justify-content: space-around;
   }
 }
 @media (min-width: 900px) {
@@ -178,6 +187,10 @@ body {
   margin-top: 5rem !important;
 }
 
+.mT-7 {
+  margin-top: 7rem;
+}
+
 .mT-9 {
   margin-top: 9rem;
 }
@@ -196,6 +209,10 @@ body {
 
 .mR-2 {
   margin-right: 2rem;
+}
+
+.mB-0 {
+  margin-bottom: 0rem;
 }
 
 .d-inline-block {
@@ -331,6 +348,10 @@ body {
   font-size: 7rem;
 }
 
+.fs-9 {
+  font-size: 9rem;
+}
+
 .fw-sm {
   font-weight: 300;
 }
@@ -425,6 +446,10 @@ body {
   background-color: #2bb0f2;
 }
 
+.bg-white {
+  background: #fff;
+}
+
 .title {
   width: clamp(50%, 70rem, 90%);
   margin-right: auto;
@@ -466,6 +491,10 @@ body {
 
 .demostration {
   width: clamp(50%, 90rem, 100%);
+}
+
+.flexColumns__card {
+  max-width: 26rem;
 }
 
 /*# sourceMappingURL=style.css.map */

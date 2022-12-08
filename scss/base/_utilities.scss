@@ -2,14 +2,17 @@
 @use '../abstracts/colors' as *;
 
 .container {
-  @include pX(2rem);
+  @include pX(1rem);
   max-width: 1200px;
   margin: 0 auto;
+
+  @include for-size('tablet-medium-up') {
+    @include pX(2rem);
+  }
 }
 
 @mixin row {
   flex-direction: row !important;
-  justify-content: space-around;
 }
 
 .row-normal-phone {
@@ -155,6 +158,10 @@
   margin-top: 5rem !important;
 }
 
+.mT-7 {
+  margin-top: 7rem;
+}
+
 .mT-9 {
   margin-top: 9rem;
 }
@@ -175,6 +182,9 @@
   margin-right: 2rem;
 }
 
+.mB-0 {
+  margin-bottom: 0rem;
+}
 // ! Display
 
 .d-inline-block {
@@ -311,6 +321,9 @@
   font-size: 7rem;
 }
 
+.fs-9 {
+  font-size: 9rem;
+}
 // ! Font weight
 .fw-sm {
   font-weight: 300;
@@ -416,4 +429,8 @@
 
 .bg-secondary {
   background-color: $c-secondary;
+}
+
+.bg-white {
+  background: $c-white;
 }
