@@ -1,0 +1,15 @@
+@use '../abstracts/mixins' as *;
+
+.title {
+  width: clamp(50%, 70rem, 90%);
+
+  @include mX(auto);
+
+  &--form {
+    @include mX(unset);
+
+    width: clamp(90%, 40rem, 100%);
+
+    letter-spacing: 0.3rem;
+  }
+}

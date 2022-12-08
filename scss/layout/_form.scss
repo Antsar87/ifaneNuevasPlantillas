@@ -1,0 +1,35 @@
+@use '../abstracts/colors' as *;
+
+.form {
+  &__label {
+    position: relative;
+  }
+
+  &__input {
+    padding-left: 6rem;
+
+    &:focus {
+      outline: none;
+    }
+
+    &::placeholder {
+      color: $c-primary;
+
+      letter-spacing: 0.2rem;
+      text-transform: uppercase;
+
+      font-weight: 200;
+    }
+  }
+
+  &__img {
+    position: absolute;
+    left: 2rem;
+
+    height: 2rem;
+  }
+
+  &__btn {
+    letter-spacing: .3rem;
+  }
+}

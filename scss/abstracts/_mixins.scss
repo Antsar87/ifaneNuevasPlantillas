@@ -48,3 +48,8 @@
   margin-top: $value;
   margin-bottom: $value;
 }
+
+@mixin mX($value) {
+  margin-right: $value;
+  margin-left: $value;
+}

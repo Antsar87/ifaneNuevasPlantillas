@@ -36,19 +36,6 @@
   }
 }
 
-// header
-.header {
-  padding-top: 12rem;
-
-  padding-bottom: 3rem;
-
-  &--ninja {
-    padding-top: 15rem;
-
-    padding-bottom: 12rem;
-  }
-}
-
 //! Paddings
 
 .pT-2 {
@@ -363,6 +350,13 @@
   width: 100%;
 }
 
+// ! height
+.h-screen {
+  @include for-size('tablet-medium-up') {
+    height: 100vh;
+  }
+}
+
 // ! ul
 .list-style-none {
   list-style: none;
@@ -381,10 +375,33 @@
   object-fit: cover;
 }
 
+// border
+.border-none {
+  border: none;
+}
+
 .border-radius-2 {
   border-radius: 2rem;
 }
 
 // colors
+.c-primary {
+  color: $c-primary;
+}
+
+.c-secondary {
+  color: $c-secondary;
+}
+
+.c-white {
+  color: $c-white;
+}
 
 // bg
+.bg-primary {
+  background-color: $c-primary;
+}
+
+.bg-secondary {
+  background-color: $c-secondary;
+}

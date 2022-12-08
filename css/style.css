@@ -48,15 +48,6 @@ body {
   }
 }
 
-.header {
-  padding-top: 12rem;
-  padding-bottom: 3rem;
-}
-.header--ninja {
-  padding-top: 15rem;
-  padding-bottom: 12rem;
-}
-
 .pT-2 {
   padding-top: 2rem;
 }
@@ -372,6 +363,12 @@ body {
   width: 100%;
 }
 
+@media (min-width: 700px) {
+  .h-screen {
+    height: 100vh;
+  }
+}
+
 .list-style-none {
   list-style: none;
 }
@@ -388,8 +385,68 @@ body {
   object-fit: cover;
 }
 
+.border-none {
+  border: none;
+}
+
 .border-radius-2 {
   border-radius: 2rem;
+}
+
+.c-primary {
+  color: #0066c0;
+}
+
+.c-secondary {
+  color: #2bb0f2;
+}
+
+.c-white {
+  color: #fff;
+}
+
+.bg-primary {
+  background-color: #0066c0;
+}
+
+.bg-secondary {
+  background-color: #2bb0f2;
+}
+
+.title {
+  width: clamp(50%, 70rem, 90%);
+  margin-right: auto;
+  margin-left: auto;
+}
+.title--form {
+  margin-right: unset;
+  margin-left: unset;
+  width: clamp(90%, 40rem, 100%);
+  letter-spacing: 0.3rem;
+}
+
+.form__label {
+  position: relative;
+}
+.form__input {
+  padding-left: 6rem;
+}
+.form__input:focus {
+  outline: none;
+}
+.form__input::placeholder {
+  color: #0066c0;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  font-weight: 200;
+}
+.form__img {
+  position: absolute;
+  left: 2rem;
+  height: 2rem;
+}
+.form__btn {
+  letter-spacing: 0.3rem;
 }
 
 /*# sourceMappingURL=style.css.map */
