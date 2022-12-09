@@ -45,6 +45,12 @@
   }
 }
 
+.row-reverse-tabletBig {
+  @include for-size('tablet-big-up') {
+    flex-direction: row-reverse !important;
+  }
+}
+
 .row-reverse-landscape {
   @include for-size('tablet-landscape-up') {
     flex-direction: row-reverse !important;
@@ -180,6 +186,11 @@
 
 .mR-2 {
   margin-right: 2rem;
+}
+
+.mY-0 {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .mB-0 {
@@ -330,7 +341,7 @@
 }
 
 .fw-md {
-  font-weight: 400;
+  font-weight: 600;
 }
 
 .fw-bold {
@@ -396,6 +407,10 @@
   line-height: 1.5em;
 }
 
+.line-height-big {
+  line-height: 2em;
+}
+
 .object-fit-cover {
   object-fit: cover;
 }
@@ -407,6 +422,11 @@
 
 .border-radius-2 {
   border-radius: 2rem;
+}
+
+// letter spacing
+.letter-space-md {
+  letter-spacing: 0.2rem;
 }
 
 // colors

@@ -2,4 +2,17 @@
   &__card {
     max-width: 26rem;
   }
+
+  &__computerCard {
+    min-width: 24rem;
+    max-width: 35rem;
+  }
+
+  &__imageBox {
+    max-width: 13rem;
+  }
+
+  &__bookImg {
+    height: 45rem;
+  }
 }

@@ -1,6 +1,13 @@
 @use '../abstracts/colors' as *;
+@use '../abstracts/mixins' as *;
 
 .form {
+  &--promesas {
+    width: clamp(20rem, 45rem, 100%);
+
+    @include mX(auto);
+  }
+
   &__label {
     position: relative;
   }
@@ -30,6 +37,6 @@
   }
 
   &__btn {
-    letter-spacing: .3rem;
+    letter-spacing: 0.3rem;
   }
 }

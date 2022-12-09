@@ -1,0 +1,15 @@
+.line {
+  position: relative;
+
+  &::after {
+    content: '';
+
+    position: absolute;
+    bottom: 0;
+    left: 18rem;
+
+    background: white;
+    height: 0.2rem;
+    width: 5rem;
+  }
+}

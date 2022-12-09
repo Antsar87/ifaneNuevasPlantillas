@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;800&display=swap");
 *,
 *::after,
 *::before {
@@ -7,7 +8,7 @@
 }
 
 html {
-  font-size: 50%;
+  font-size: 56.25%;
   overflow-x: hidden;
 }
 @media (min-width: 600px) {
@@ -59,6 +60,12 @@ body {
 
 @media (min-width: 700px) {
   .row-reverse-medium {
+    flex-direction: row-reverse !important;
+  }
+}
+
+@media (min-width: 800px) {
+  .row-reverse-tabletBig {
     flex-direction: row-reverse !important;
   }
 }
@@ -211,6 +218,11 @@ body {
   margin-right: 2rem;
 }
 
+.mY-0 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 .mB-0 {
   margin-bottom: 0rem;
 }
@@ -357,7 +369,7 @@ body {
 }
 
 .fw-md {
-  font-weight: 400;
+  font-weight: 600;
 }
 
 .fw-bold {
@@ -414,6 +426,10 @@ body {
   line-height: 1.5em;
 }
 
+.line-height-big {
+  line-height: 2em;
+}
+
 .object-fit-cover {
   object-fit: cover;
 }
@@ -424,6 +440,10 @@ body {
 
 .border-radius-2 {
   border-radius: 2rem;
+}
+
+.letter-space-md {
+  letter-spacing: 0.2rem;
 }
 
 .c-primary {
@@ -465,6 +485,28 @@ body {
   width: clamp(40%, 35rem, 90%);
 }
 
+.cardPasos__icon {
+  height: 5rem;
+}
+
+.line {
+  position: relative;
+}
+.line::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 18rem;
+  background: white;
+  height: 0.2rem;
+  width: 5rem;
+}
+
+.form--promesas {
+  width: clamp(20rem, 45rem, 100%);
+  margin-right: auto;
+  margin-left: auto;
+}
 .form__label {
   position: relative;
 }
@@ -495,6 +537,16 @@ body {
 
 .flexColumns__card {
   max-width: 26rem;
+}
+.flexColumns__computerCard {
+  min-width: 24rem;
+  max-width: 35rem;
+}
+.flexColumns__imageBox {
+  max-width: 13rem;
+}
+.flexColumns__bookImg {
+  height: 45rem;
 }
 
 /*# sourceMappingURL=style.css.map */
