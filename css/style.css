@@ -47,6 +47,12 @@ body {
   }
 }
 
+@media (min-width: 800px) {
+  .row-tabletBig {
+    flex-direction: row !important;
+  }
+}
+
 @media (min-width: 900px) {
   .row-landscape {
     flex-direction: row !important;
@@ -502,6 +508,34 @@ body {
   width: 5rem;
 }
 
+.tiempo__info {
+  position: relative;
+  letter-spacing: 0.3rem;
+}
+.tiempo__info::after {
+  content: "";
+  position: absolute;
+  bottom: -2.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+.tiempo__info--dias::after {
+  content: "Dias";
+}
+.tiempo__info--horas::after {
+  content: "Horas";
+}
+.tiempo__info--minutos::after {
+  content: "Minutos";
+}
+.tiempo__info--segundos::after {
+  content: "Segundos";
+}
+
 .form--promesas {
   width: clamp(20rem, 45rem, 100%);
   margin-right: auto;
@@ -546,7 +580,28 @@ body {
   max-width: 13rem;
 }
 .flexColumns__bookImg {
-  height: 45rem;
+  max-height: 45rem;
+  width: 100%;
+}
+.flexColumns__check {
+  height: 1.5rem;
+}
+
+.gridColumns {
+  display: grid;
+}
+.gridColumns--3-columns {
+  grid-template-columns: repeat(1, 1fr);
+}
+@media (min-width: 600px) {
+  .gridColumns--3-columns {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 900px) {
+  .gridColumns--3-columns {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

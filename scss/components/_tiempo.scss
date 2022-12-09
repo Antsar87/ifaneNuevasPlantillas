@@ -1,0 +1,46 @@
+@use '../abstracts/colors' as *;
+
+@mixin after($value) {
+  &::after {
+    content: $value;
+  }
+}
+
+.tiempo {
+  &__info {
+    position: relative;
+
+    letter-spacing: .3rem;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -2.5rem;
+      left: 50%;
+
+      transform: translateX(-50%);
+
+      color: $c-white;
+      font-size: 1.3rem;
+      font-weight: 600;
+
+      letter-spacing: 0;
+    }
+
+    &--dias {
+      @include after('Dias');
+    }
+
+    &--horas {
+      @include after("Horas")
+    }
+
+    &--minutos {
+      @include after("Minutos")
+    }
+
+    &--segundos {
+      @include after("Segundos")
+    }
+  }
+}

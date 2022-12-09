@@ -27,6 +27,12 @@
   }
 }
 
+.row-tabletBig {
+  @include for-size('tablet-big-up') {
+    flex-direction: row !important;
+  }
+}
+
 .row-landscape {
   @include for-size('tablet-landscape-up') {
     @include row;
@@ -44,6 +50,7 @@
     flex-direction: row-reverse !important;
   }
 }
+
 
 .row-reverse-tabletBig {
   @include for-size('tablet-big-up') {
