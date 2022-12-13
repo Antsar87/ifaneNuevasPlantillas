@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "sass -w scss:css"
+    "start": "sass -w scss:css",
+    "build": "sass scss:css --style compressed"
   },
   "keywords": [],
   "author": "Manuel Arnaldo",
