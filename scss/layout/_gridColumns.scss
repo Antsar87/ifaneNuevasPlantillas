@@ -14,4 +14,24 @@
       grid-template-columns: repeat(3, 1fr);
     }
   }
+
+  &--ventasSteps {
+    width: clamp(50%, 90rem, 90%);
+
+    grid-template-columns: 20rem;
+
+    @include mX(auto);
+
+    @include for-size('tablet-portrait-up') {
+      grid-template-columns: repeat(2, 20rem);
+    }
+
+    @include for-size('tablet-big-up') {
+      grid-template-columns: repeat(4, 15rem);
+
+      & > *:nth-child(even) {
+        margin-top: 5rem;
+      }
+    }
+  }
 }

@@ -1,3 +1,5 @@
+@use "../abstracts/mixins" as *;
+
 .flexColumns {
   &__card {
     max-width: 26rem;
@@ -19,5 +21,27 @@
 
   &__check {
     height: 1.5rem;
+  }
+
+  &__miguelCalvo {
+    max-width: 50rem;
+  }
+
+  &__ninja {
+    max-width: 30rem;
+  }
+
+  &--logos {
+    margin-top: 3rem;
+    gap: 2rem;
+    
+    @include for-size(840px) {
+      margin-top: 9rem;
+      gap: 5rem;
+    }
+  }
+
+  &__ninjaVentas {
+    max-width: 30rem;
   }
 }
